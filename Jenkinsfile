@@ -15,7 +15,7 @@ pipeline{
                         git url: 'https://github.com/Mezta84/Cypress.git'
                         bat 'npm install'
                         bat 'npm update'
-                        bat ' npm run test-dashboard'
+                        bat 'npm run test-dashboard'
                     }
                 }
                 stage('Slave Node2'){
@@ -26,7 +26,7 @@ pipeline{
                         git url: 'https://github.com/Mezta84/Cypress.git'
                         bat 'npm install'
                         bat 'npm update'
-                        bat ' npm run test-dashboard'
+                        bat 'npm run test-dashboard'
                     }
                 }
             }
