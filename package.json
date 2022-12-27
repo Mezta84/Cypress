@@ -10,7 +10,8 @@
     "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
     "delete-mochawesome-report": "rm -rf mochawesome-report/*",
     "cypress-regression-pack": "npm run delete-results && npm run delete-mochawesome-report && npm run test -- --browser electron & npm run test -- --browser firefox & npm run test -- --browser edge & npm run test -- --browser chrome && npm run mochawesome-merge",
-    "test-dashboard": "npm run test --record --key f3b18013-585f-4fa7-b37e-84cb10c75ab4 --parallel",
+    "tests-dashboard": "npm run test --record --key f3b18013-585f-4fa7-b37e-84cb10c75ab4 --parallel",
+    "test-dashboard": "npm run --spec cypress/e2e/examle1.js --record --key f3b18013-585f-4fa7-b37e-84cb10c75ab4 --parallel",
     "cypress-multi-browser": "npm run test -- --browser electron & npm run test -- --browser firefox & npm run test -- --browser edge & npm run test -- --browser chrome"
     },
   "author": "Tarik Mezgouria",
